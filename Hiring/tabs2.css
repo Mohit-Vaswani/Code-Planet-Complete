@@ -37,7 +37,7 @@
   margin-bottom: 40px;
   border-radius: 4px;
   box-shadow: 0 8px 10px rgba(0, 0, 0, 0.1);
-  max-width: 30em;
+  max-width: 50em;
   width: 100%;
 }
 .card h1 {
@@ -90,7 +90,7 @@
   display: flex;
   flex-direction: row;
   align-content: center;
-  justify-content: flex-start;
+  justify-content: space-between;
   font-family: var(--font-ibm-plex-sans);
   font-style: normal;
   font-weight: normal;
@@ -125,6 +125,8 @@
   height: 1rem;
   left: 0rem;
   margin-right: 0.5rem;
+  position: absolute;
+  right: 2rem;
   content: url("data:image/svg+xml,%3Csvg width='100%' height='100%' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M22.6066 12H1.3934' stroke='%23202842' stroke-width='1.875' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M12 1.39343V22.6066' stroke='%23202842' stroke-width='1.875' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
 }
 .card details[open] summary {
