@@ -64,6 +64,7 @@ nav{
     text-align: center;
     visibility: hidden;
     box-shadow: 0 6px 10px rgba(0,0,0,0.15);
+     z-index: 100;
   }
   .nav-links li:hover .drop-menu,
   .nav-links li:hover .mega-box{
@@ -97,6 +98,7 @@ nav{
     justify-content: space-between;
     box-shadow: 0 6px 10px rgba(0,0,0,0.15);
     position: fixed;
+      z-index: 100;
   }
   .mega-box .content .row{
     width: calc(25% - 30px);
