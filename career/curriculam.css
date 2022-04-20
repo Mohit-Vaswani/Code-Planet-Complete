@@ -1,0 +1,49 @@
+/* Curriculam */
+
+
+body {
+    font-family: 'Poppins', sans-serif !important;
+}
+a:hover {
+    text-decoration: none;
+}
+
+#steps h2{
+    font-size: 5rem;
+    margin: 20rem 0rem 10rem;
+    color: var(--secondary-color);
+}
+
+#steps h4{
+    font-size: 3rem;
+}
+
+.pl-3, .px-3 {
+    padding-left: 1rem !important;
+    height: 200px;
+}
+
+@media screen and (max-width: 500px)  {
+    #steps h2 {
+    font-size: 3.5rem;
+    margin: 5rem 0rem 10rem;
+    }
+
+    .faq-container h2 {
+        font-size: 2.5rem;
+        padding-right: 680px;
+        margin-bottom: 5rem;
+        text-align: center;
+    }
+
+    .accordion .accordion-item {
+        border-bottom: 1px solid #e5e5e5;
+        padding-right: 680px;
+    }
+
+    .accordion button .accordion-title {
+        padding: 1em 1.5em 1em 0;
+        font-size: 1.5rem;
+    }
+}
+    

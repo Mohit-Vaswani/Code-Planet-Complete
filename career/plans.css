@@ -1,0 +1,353 @@
+.calc-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  color: var(--secondary-color);
+}
+
+#plan-heading {
+  text-align: center;
+  font-size: 4rem;
+  padding: 10rem 0rem 5rem;
+  color: var(--secondary-color);
+}
+/* 
+.first-box {
+  width: 450px;
+  height: 600px;
+  border-radius: 20px;
+  border: 2px solid #5e17eb;
+  margin: 1rem;
+  background: rgba(80, 42, 250, 0.576);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  color: #fff !important;
+} */
+
+.first-box {
+  width: 450px;
+  height: 600px;
+  border-radius: 20px;
+  border: 2px solid #5e17eb;
+  margin: 1rem;
+  color: #fff !important;
+  background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+}
+
+/* .first-box {
+  width: 450px;
+  height: 600px;
+  border-radius: 20px;
+  border: 2px solid #ebe2fd;
+  margin: 1rem;
+  color: #fff !important;
+  background: rgb(238,174,202);
+background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+} */
+
+.first-box {
+  width: 450px;
+  height: 600px;
+  border-radius: 20px;
+  border: 2px solid #ebe2fd;
+  margin: 1rem;
+  color: #fff !important;
+  background: rgb(246,133,245);
+background: radial-gradient(circle, rgba(246,133,245,1) 0%, rgba(148,168,233,1) 100%);
+}
+
+
+
+.first-box h2 {
+  margin: 4rem 3rem 2rem;
+  font-size: 3.5rem;
+}
+.first-box p {
+  margin: 2rem 3rem 0rem;
+  font-size: 2rem;
+}
+.first-box button {
+  position: relative;
+  left: 6rem;
+  top: 18rem;
+  padding: 15px 100px;
+  font-size: 2.2rem;
+  border: none;
+  color: #fff;
+  background: #5e17eb;
+  border-radius: 20px;
+}
+
+.first-box .calc-tabbed {
+  margin: 1rem 3rem;
+}
+
+.second-box {
+  width: 450px;
+  height: 600px;
+  border-radius: 20px;
+  border: 2px solid #5e17eb;
+  margin: 3rem;
+}
+
+.second-box h2 {
+  margin: 4rem 3rem 2rem;
+  font-size: 3.5rem;
+}
+
+.second-box .price {
+  display: flex;
+  margin: 2rem 3rem;
+}
+
+.price h1 {
+  font-size: 5rem;
+}
+
+.price span {
+  font-size: 2rem;
+  margin: 3rem 0rem 0rem 2rem;
+}
+
+.second-box li {
+  margin: 1rem 3rem;
+  font-size: 1.8rem;
+}
+
+.second-box p {
+  margin: 2rem 3rem 0rem;
+  font-size: 2rem;
+}
+.second-box button {
+  position: relative;
+  left: 6rem;
+  top: 17rem;
+  padding: 15px 100px;
+  font-size: 2.2rem;
+  border: none;
+  color: #fff;
+  background: #5e17eb;
+  border-radius: 20px;
+}
+
+/* Functioning of the Plans -> (Status - Not Working) */
+
+@import "compass/css3";
+
+.calc-tabbed > input {
+  display: none;
+}
+
+.calc-tabbed > label {
+  background: #d3d2d2;
+  display: block;
+  float: left;
+  padding: 12px 20px;
+  font-size: 1.5rem;
+  margin-right: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  
+  background: rgba(218, 209, 255, 0.576);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.calc-tabbed > label:hover,
+.calc-tabbed > input:checked + label {
+  background: #5e17eb;
+  color: #fff;
+}
+.calc-tabs {
+  clear: both;
+  perspective: 600px;
+}
+.calc-tabs > .text-box {
+  width: 300px;
+  position: absolute;
+  border: 2px solid #5e17eb;
+  padding: 10px 30px 40px;
+  line-height: 1.4em;
+  opacity: 0;
+  transform: rotateX(-20deg);
+  transform-origin: top center;
+  transition: opacity 0.3s, transform 1s;
+  z-index: 0;
+}
+#tab-nav-1:checked ~ .calc-tabs > .text-box:nth-of-type(1),
+#tab-nav-2:checked ~ .calc-tabs > .text-box:nth-of-type(2),
+#tab-nav-3:checked ~ .calc-tabs > .text-box:nth-of-type(3),
+#tab-nav-4:checked ~ .calc-tabs > .text-box:nth-of-type(4),
+#tab-nav-5:checked ~ .calc-tabs > .text-box:nth-of-type(5),
+#tab-nav-6:checked ~ .calc-tabs > .text-box:nth-of-type(6) {
+  transform: rotateX(0);
+  opacity: 1;
+  z-index: 1;
+  background: #5e17eb;
+  border-radius: 20px;
+}
+
+/* My Css */
+
+.text-box {
+  display: flex;
+  justify-content: space-between;
+}
+
+.text-1 {
+  margin: -2rem 5rem -1rem -2rem;
+}
+
+.text-2 {
+  margin: -2rem 0rem 1rem 0rem;
+}
+
+/* @media screen and (max-width: 700px) {
+  .calc-tabbed {
+    width: 400px;
+  }
+  .calc-tabbed > label {
+    display: none;
+  }
+  .calc-tabs > .text-box {
+    width: 400px;
+    border: none;
+    padding: 0;
+    opacity: 1;
+    position: relative;
+    transform: none;
+    margin-bottom: 60px;
+  }
+  .calc-tabs > .text-box h2 {
+    border-bottom: 2px solid #5e17eb;
+    padding-bottom: 0.5em;
+  }
+} */
+
+@media screen and (max-width: 900px) {
+  .calc-container{
+    display: flex;
+    flex-direction: column;
+  }
+
+  #plan-heading {
+    font-size: 3rem;
+    margin-top: -10rem;
+    padding-bottom: 3rem;
+}
+}
+
+@media screen and (max-width: 440px) {
+  .first-box{
+    width: 350px;
+    height: 520px;
+  }
+  .first-box h2 {
+    margin: 2rem 3rem 1rem;
+    font-size: 3rem;
+}
+.first-box p {
+  margin: 2rem 3rem 0rem;
+  font-size: 1.7rem;
+}
+.first-box .calc-tabbed {
+  margin: 1rem 2.5rem;
+}
+
+.calc-tabbed > label {
+  padding: 5px 13px;
+}
+
+.calc-tabs > .text-box {
+  width: 280px;
+}
+
+.text-1 {
+  margin: -2rem 0rem 0rem -2rem;
+}
+
+.text-2 {
+  margin: -1.9rem 0rem 0rem 3rem;
+}
+
+.first-box button {
+  left: 5rem;
+  top: 18rem;
+  padding: 10px 60px;
+  font-size: 2rem;
+}
+
+}
+
+@media screen and (max-width: 390px) {
+  .first-box{
+    width: 320px;
+    height: 520px;
+  }
+  .first-box .calc-tabbed {
+    margin: 1rem 1.5rem;
+}
+.first-box button {
+  left: 5rem;
+  top: 15rem;
+}
+}
+
+
+@media screen and (max-width: 440px) {
+  .second-box{
+    width: 330px;
+    height: 430px;
+  }
+  .second-box h2 {
+    margin: 2rem 3rem 1rem;
+    font-size: 3rem;
+}
+
+.second-box p {
+  margin: 1rem 3rem 0rem;
+  font-size: 1.6rem;
+}
+
+.price h1 {
+  font-size: 4rem;
+}
+
+.second-box li {
+  margin: 1rem 3rem;
+  font-size: 1.5rem;
+}
+
+.second-box button {
+  left: 5rem;
+  top: 7rem;
+  padding: 10px 60px;
+}
+
+
+
+}
+
+@media screen and (max-width: 370px) {
+  .second-box{
+    width: 300px;
+    height: 430px;
+  }
+  .second-box button {
+    left: 3.5rem;
+    top: 7rem;
+    padding: 10px 60px;
+  }
+  .price span {
+    font-size: 1.5rem;
+    margin: 3rem 0rem 0rem 1rem;
+}
+}

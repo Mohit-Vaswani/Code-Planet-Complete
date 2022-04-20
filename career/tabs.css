@@ -1,0 +1,128 @@
+@import "compass/css3";
+
+.tabs-container{
+    margin: 10rem 0rem 40rem;
+    color: var(--secondary-color);
+}
+
+.tabs-container h1{
+    font-size: 4.5rem;
+}
+
+#tabs-heading{
+    text-align: center;
+}
+
+.tabs-container ul{
+    margin: 2rem 0rem;
+}
+
+.tabs-container li{
+    font-size: 1.8rem;
+    line-height: 1.5;
+}
+
+.tabs-container button{
+    font-size: 1.8rem;
+    padding: 10px 20px;
+    border: none;
+    color: #fff;
+    background: #5e17eb;
+    border-radius: 20px;
+}
+
+ ::selection {
+	 background-color: #5e17eb;
+    }
+    .tabbed {
+	 width: 900px;
+	 margin: 50px auto;
+}
+ .tabbed > input {
+	 display: none;
+}
+
+ .tabbed > label {
+     background: #a3a3a3;
+	 display: block;
+	 float: left;
+	 padding: 12px 20px;
+     font-size: 2.05rem;
+	 margin-right: 5px;
+	 cursor: pointer;
+	 transition: background-color 0.3s;
+     
+}
+.tabbed > label:hover, .tabbed > input:checked + label {
+    background: #5e17eb;
+    color: #fff;
+}
+.tabs {
+    clear: both;
+    perspective: 600px;
+}
+.tabs > div {
+    width: 900px;
+    position: absolute;
+    border: 2px solid #5e17eb;
+    padding: 10px 30px 40px;
+    line-height: 1.4em;
+    opacity: 0;
+    transform: rotateX(-20deg);
+    transform-origin: top center;
+	 transition: opacity 0.3s, transform 1s;
+	 z-index: 0;
+}
+#tab-nav-1:checked ~ .tabs > div:nth-of-type(1), #tab-nav-2:checked ~ .tabs > div:nth-of-type(2), #tab-nav-3:checked ~ .tabs > div:nth-of-type(3), #tab-nav-4:checked ~ .tabs > div:nth-of-type(4), #tab-nav-5:checked ~ .tabs > div:nth-of-type(5), #tab-nav-6:checked ~ .tabs > div:nth-of-type(6) {
+    transform: rotateX(0);
+    opacity: 1;
+    z-index: 1;
+}
+
+@media screen and (max-width: 700px) {
+    .tabbed {
+        width: 400px;
+	}
+	 .tabbed > label {
+		 display: none;
+	}
+	 .tabs > div {
+		 width: 400px;
+		 border: none;
+		 padding: 0;
+		 opacity: 1;
+		 position: relative;
+		 transform: none;
+		 margin-bottom: 60px;
+	}
+	 .tabs > div h2 {
+		 border-bottom: 2px solid #5e17eb;
+		 padding-bottom: 0.5em;
+	}
+}
+
+@media screen and (max-width: 450px){
+
+    .tabs-container{
+        margin: 10rem 0rem 10rem;
+    }
+
+    .tabs-container h1 {
+        font-size: 3rem;
+    }
+    .h2, h2 {
+        font-size: 25px;
+    }
+    .tabs-container li {
+        font-size: 1.4rem;
+    }
+    .tabs > div {
+        width: 350px;
+        padding-left: 20px;
+        padding-right: 30px;
+        margin-bottom: 30px;
+    }
+    .tabs-container button {
+        font-size: 1.4rem;
+    }
+}
