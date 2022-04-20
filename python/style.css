@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Hanuman&family=Roboto:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --primary-color: #edf2fc;
+  --secondary-color: #212121;
+}
+
+.dark-theme {
+  --primary-color: #212121;
+  --secondary-color: #fff;
+}
+
+body {
+  background: var(--primary-color);
+}
+
+#icon {
+  width: 30px;
+  position: absolute;
+  cursor: pointer;
+  right: 2rem;
+  top: 1.5rem;
+}
+
+/* Design */
+
+.blob-1 {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  background: #5e17eb;
+  
+  filter: blur(50px);
+  border-radius: 200px;
+  top: 90rem;
+  right: 7rem;
+  z-index: -1;
+}
+
+.blob-2 {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  background: #5e17eb;
+  
+  filter: blur(50px);
+  border-radius: 200px;
+  top: 165rem;
+  left: 8rem;
+  z-index: -1;
+}
+
+.blob-3 {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  background: #5e17eb;
+  
+  filter: blur(50px);
+  border-radius: 200px;
+  top: 230rem;
+  right: 18rem;
+  z-index: -1;
+}
+
+.blob-4 {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  background: #5e17eb;
+  
+  filter: blur(50px);
+  border-radius: 200px;
+  top: 300rem;
+  left: 8rem;
+  z-index: -1;
+}
+
+.extra-img {
+  width: 250px;
+  position: absolute;
+}
+
+.design-1 img {
+  width: 340px;
+  top: 92rem;
+  right: 13rem;
+}
+
+.design-2 img {
+  width: 400px;
+  top: 165rem;
+  left: 7rem;
+}
+
+.design-4 img {
+  width: 350px;
+  top: 290rem;
+  left: 13rem;
+}
+
+.design-3 img {
+  top: 230rem;
+  right: 22rem;
+}
+
+
+@media screen and (max-width: 400px) {
+  .blob-1{
+    top: 200rem;
+    width: 200px;
+    height: 200px;
+  }
+
+  .design-1 img {
+    width: 230px;
+    top: 197rem;
+    right: 7rem;
+}
+
+.blob-2{
+  top: 300rem;
+    width: 200px;
+    height: 200px;
+}
+
+.design-2 img {
+  width: 280px;
+    top: 300rem;
+    left: 4rem;
+}
+
+.blob-3{
+  display: none;
+}
+
+.design-3 img {
+  display: none;
+}
+
+.blob-4{
+  display: none;
+}
+
+.design-4 img {
+  display: none;
+}
+
+}

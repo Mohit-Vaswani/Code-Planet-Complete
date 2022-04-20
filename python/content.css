@@ -1,0 +1,278 @@
+.content-page{
+    width: 100%;
+    height: 300vh;
+}
+
+/* Overview */
+
+.overview {
+    width: 700px;
+    color: var(--secondary-color);
+}
+
+.overview h2{
+    font-size: 4rem;
+    margin: 3rem 0rem;
+    margin-left: 5rem;
+}
+
+.overview p{
+    font-size: 1.8rem;
+    margin: 0rem 5rem;
+}
+
+/* Learn */
+
+.learn{
+    width: 600px;
+    float: right;
+    color: var(--secondary-color);
+    margin-top: 15rem;
+}
+
+.learn h2{
+    font-size: 3.8rem;
+}
+
+.learn-points{
+    padding: 20px 20px 20px 0px;
+}
+
+.learn-points li{
+    list-style: none;
+    font-size: 1.8rem;
+    line-height: 2.1;
+}
+
+.learn-points i{
+    padding-right: 10px;
+}
+
+/* instructor */
+
+.instructor{
+    width: 600px;
+    color: var(--secondary-color);
+    margin-top: 80rem;
+}
+
+.instructor h2{
+    font-size: 3.8rem;
+    margin-left: 15rem;
+}
+
+
+.box-ins img{
+    width: 200px;
+    border-radius: 100px;
+}
+
+.one{
+    display: flex;
+    align-items: center;
+    font-size: 1.8rem;
+    margin: 5rem;
+}
+
+.one-text{
+    padding-left: 30px;
+}
+
+.two{
+    display: flex;
+    align-items: center;
+    font-size: 1.8rem;
+    margin: 5rem;
+}
+
+.two-text{
+    padding-left: 30px;
+}
+
+/* course-content */
+
+.course-content h2{
+    margin-left: 68rem;
+    font-size: 4rem;
+    color: var(--secondary-color);
+}
+
+.course-content > div {
+    width: 90%;
+	max-width: 700px;
+    margin-left: 50rem;
+	margin-top: 5rem;
+	margin-bottom: 5rem;
+}
+
+details div {
+	border-left: 2px solid #000;
+	border-right: 2px solid #000;
+	border-bottom: 2px solid #000;
+	padding: 1.5em;
+    font-size: 1.8rem;
+    color: #878787;
+}
+
+details div > * + * {
+	margin-top: 1.5em;
+}
+
+details + details {
+	margin-top: .5rem;
+}
+
+summary {
+	list-style: none;
+}
+
+summary::-webkit-details-marker {
+    display: none;
+}
+
+summary {
+	border: 2px solid #000;
+	padding: .75em 1em;
+    font-size: 1.8rem;
+	cursor: pointer;
+	position: relative;
+    color: var(--secondary-color);
+	padding-left: calc(1.75rem + .75rem + .75rem);
+}
+
+summary:before {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	left: .75rem;
+	content: "↓";
+	width: 1.75rem;
+	height: 1.75rem;
+	background-color: #000;
+	color: #FFF;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	flex-shrink: 0;
+}
+
+details[open] summary {
+	background-color: #5e17eb;
+}
+
+details[open] summary:before {
+	content: "↑";
+}
+
+summary:hover {
+	background-color: #5e17eb;
+}
+
+.course-content a {
+	color: inherit;
+	font-weight: 600;
+	text-decoration: none;
+	box-shadow: 0 1px 0 0;
+}
+
+.course-content a:hover {
+    box-shadow: 0 3px 0 0;
+}
+
+code {
+    font-family: monospace;
+	font-weight: 600;
+}
+
+@media screen and (max-width: 400px) {
+    .overview{
+        width: 350px;
+    }
+
+    .overview h2 {
+        font-size: 3rem;
+        margin: 2rem 0rem;
+        text-align: center;
+    }
+
+    .overview p {
+        font-size: 1.5rem;
+        text-align: center;
+        margin: 0rem;
+        padding: 0px 50px;
+    }    
+
+    .learn {
+        width: 350px;
+        margin-top: 40rem;
+        margin-bottom: 35rem;
+    }
+
+    .learn h2 {
+        font-size: 3rem;
+        text-align: center;
+    }
+
+    .learn-points li {
+        list-style: none;
+        font-size: 1.5rem;
+        line-height: 1.5;
+        margin: 1.5rem 0rem;
+    }
+
+    .learn-points {
+        padding: 20px 40px;
+    }
+
+    .instructor{
+        width: 330px;
+    }
+    
+    .instructor h2{
+        font-size: 3rem;
+        margin-left: 0rem;
+        text-align: center;
+    }
+
+    .box-ins img {
+        width: 150px;
+    }
+
+    .one{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 1.5rem;
+        margin: 5rem;
+        text-align: center;
+    }
+
+    .two{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 1.5rem;
+        margin: 5rem;
+        text-align: center;
+    }
+
+    .one-text {
+        padding-left: 0px;
+    }
+    
+    .two-text{
+        padding-left: 0px;
+    }
+
+    .course-content h2 {
+        margin-left: 0rem;
+        font-size: 3rem;
+        margin-top: 85rem;
+        text-align: center;
+    }
+
+    .course-content > div {
+        margin-left: 2rem;
+        margin-top: 3rem;
+    }
+}

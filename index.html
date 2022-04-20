@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CODE PLANET</title>
+    <link rel="stylesheet" href="Home/style.css">
+    <link rel="stylesheet" href="Home/navbar.css">
+    <link rel="stylesheet" href="Home/home.css">
+    <link rel="stylesheet" href="Home/course.css">
+    <link rel="stylesheet" href="Home/service.css">
+    <link rel="stylesheet" href="Home/student.css">
+    <link rel="stylesheet" href="Home/mentors.css">
+    <link rel="stylesheet" href="Home/footer.css">
+    <link rel="stylesheet" href="Home/style2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css"
+      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+      crossorigin="anonymous"
+    />
+</head>
+<body style="background: var(--primary-color);" >
+  <nav>
+    <div class="wrapper">
+      <div class="logo"><a href="/index/"> <img src="images/planet-earth.png">CODE PLANET</a></div>
+      <input type="radio" name="slider" id="menu-btn">
+      <input type="radio" name="slider" id="close-btn">
+      <ul class="nav-links">
+        <label style="color: #fff;" for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
+        <li><a href="/index/">Home</a></li>
+        <li><a href="/about/" class="desktop-item">About</a>
+          <input type="checkbox" id="showMega">
+          <label href="/about/" for="showMega" class="mobile-item">About</label>
+        <div class="mega-box">
+          <div class="content">
+            <div id="about-row" class="row">
+              <header></header>
+              <ul class="mega-links">
+                <li><a href="#"><img src="images/skyscraper.png">About Code Planet</a></li> <hr>
+                <li><a href="#"><img src="images/portfolio.png">Portfolio</a></li> <hr>
+                <li><a href="#"><img src="images/working-man.png">Internship</a></li> <hr>
+                <li><a href="#"><img src="images/contact.png">Contact Us</a></li>
+              </ul>
+            </div>
+            <div class="row">
+              <header>Client Satisfaction</header>
+              <ul class="mega-links">
+                <li><a href="#">  <img src="images/correct.png"> 800+ Satisfied Client </a></li>
+                <li><a href="#">  <img src="images/correct.png"> 100% Client Satisfacn</a></li>
+                <li><a href="#">  <img src="images/correct.png"> 85% Repeat Clients</a></li>
+              </ul>
+            </div>
+            <div class="row">
+              <header>Work Culture</header>
+              <ul class="mega-links">
+                <li><a href="#"> <img src="images/correct.png"> 50+ Industries Served</a></li>
+                <li><a href="#"> <img src="images/correct.png"> 100% Quality Work</a></li>
+                <li><a href="#"> <img src="images/correct.png"> 40+ Active Members</a></li>
+              </ul>
+            </div>
+            <div class="row">
+              <header>Our Support</header>
+              <ul class="mega-links">
+                <li><a href="#"> <img src="images/correct.png"> 12+ Countries Served</a></li>
+                <li><a href="#"> <img src="images/correct.png"> 24/7 Customer Service</a></li>
+                <li><a href="#"> <img src="images/correct.png"> 4+ Year Experience</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </li>
+        <li><a href="/career/">Career Architect</a></li>
+        <li>
+          <a href="#" class="desktop-item">Our Services</a>
+          <input type="checkbox" id="showDrop">
+          <label for="showDrop" class="mobile-item">Our Services</label>
+          <ul class="drop-menu">
+            <li><a href="/hiring/">Hire From Us</a></li>
+            <li><a href="/internship/">Internships</a></li>
+            <li><a href="/student/">Workshops</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="/course/" class="desktop-item">Courses</a>
+          <input type="checkbox" id="showMega">
+          <label href="/course/" for="showMega" class="mobile-item">Courses</label>
+          <div class="mega-box">
+            <div class="content">
+              <div class="row">
+                <header>New Courses</header>
+                <ul class="mega-links">
+                  <li><a href="#"><img src="images/React-Native.png">React Development</a></li>
+                  <li><a href="#"><img src="images/NodeJS.png">Node JS Development</a></li>
+                  <li><a href="#"><img src="images/shopify.png">Ecommerce Store</a></li>
+                  <li><a href="#"><img src="images/ios.png">IOS Development</a></li>
+                </ul>
+              </div>
+              <div class="row">
+                <header>PROGRAMMING</header>
+                <ul class="mega-links">
+                  <li><a href="#"> <img src="images/java.png"> Java</a></li>
+                  <li><a href="#"> <img src="images/python.png"> Python</a></li>
+                  <li><a href="#"> <img src="images/letter-c.png"> C Programming</a></li>
+                  <li><a href="#"> <img src="images/c-.png"> C ++</a></li>
+                </ul>
+              </div>
+              <div class="row">
+                <header>DEVELOPMENT</header>
+                <ul class="mega-links">
+                  <li><a href="#"> <img src="images/management.png"> MERN Development</a></li>
+                  <li><a href="#"> <img src="images/web-development.png"> Web Development</a></li>
+                  <li><a href="#"> <img src="images/smartphone.png"> Android Development</a></li>
+                  <li><a href="#"> <img src="images/ux.png"> MEAN Development</a></li>
+                </ul>
+              </div>
+              <div class="row">
+                <header>ADVANCED COURSE</header>
+                <ul class="mega-links">
+                  <li><a href="#"> <img src="images/learning.png"> Machine Learning</a></li>
+                  <li><a href="#"> <img src="images/artificial-intelligence.png"> Artificial Intelligence</a></li>
+                  <li><a href="#"> <img src="images/hacker.png"> Ethical Hacking</a></li>
+                  <li><a href="#"> <img src="images/algorithm.png"> Data Structure & Algo.</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li><a href="#">Blogs</a></li>
+        <img src="images/moon.png" id="icon">
+      </ul>
+      <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
+    </div>
+  </nav>
+
+  <main>
+    <div class="text-container">
+        <h1>
+            Join <span>Code Planet</span>  today <br />
+            & Give Your <span>Dream Job</span> <br />
+            a Shape of Reality.
+          </h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga exercitationem quaerat vero molestias inventore sequi perferendis. Lorem ipsum dolor sit amet.</p>
+        <button id="main-btn" >REGISTER NOW</button>
+    </div>
+    <div class="imgBx">
+        <img id="code" src="images/code.png">
+        <img id="react" src="images/react.png">
+        <img id="ai" src="images/ai.png">
+        <img src="images/3d.png">
+    </div>
+    <div class="newbg"></div>
+</main>
+
+<div class="banner-container">
+  <img src="images/banner.png">
+  <div class="bannerForMobile">
+    <h3>If you have the courage and the commitment to learn coding, then code planet will empower you.</h3>
+    <h2>#payafterplacement</h2>
+  </div>
+  <button id="banner-btn">Join Our Program</button>
+</div>
+
+<section>
+
+  <!-- Courses -->
+  
+  <h2 id="course-heading">Our Courses</h2>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3 col-md-4 col-sm-6">
+        <div class="course-card">
+          <div style="background: #5E17EB" class="course-card-img">
+            <img
+              src="images/Java.png"
+              class="main"
+              alt=""
+            />
+            <img
+              src="images/Java.png"
+              class="layered"
+              alt=""
+            />
+          </div>
+          <div class="course-card-content">
+            <h4>Java Course Masterclass</h4>
+            <h6>
+              4.8
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </h6>
+            <button>Start Course</button>
+            <div class="bg-container">
+              <p>What you learn</p>
+              <div class="btn-container">
+                <button id="smallBtn">Java</button>
+                <button id="smallBtn">Java</button>
+                <button id="smallBtn">Java</button>
+                <button id="smallBtn">Java</button>
+                <button id="smallBtn">Java</button>
+                <button id="smallBtn">Java</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-4 col-sm-6">
+        <div class="course-card">
+          <div style="background: #5E17EB" class="course-card-img">
+            <img
+              src="images/python.png"
+              class="main"
+              alt=""
+            />
+            <img
+              src="images/python.png"
+              class="layered"
+              alt=""
+            />
+          </div>
+          <div class="course-card-content">
+            <h4>Python Course Masterclass</h4>
+            <h6>
+              4.8
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </h6>
+            <button>Start Course</button>
+            <div class="bg-container">
+              <p>What you learn</p>
+              <div class="btn-container">
+                <button id="smallBtn">Java</button>
+                <button id="smallBtn">Java</button>
+                <button id="smallBtn">Java</button>
+                <button id="smallBtn">Java</button>
+                <button id="smallBtn">Java</button>
+                <button id="smallBtn">Java</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-4 col-sm-6">
+        <div class="course-card">
+          <div style="background: #5E17EB" class="course-card-img">
+            <img
+              src="images/c++.png"
+              class="main"
+              alt=""
+            />
+            <img
+              src="images/c++.png"
+              class="layered"
+              alt=""
+            />
+          </div>
+          <div class="course-card-content">
+            <h4>C++ Course Masterclass</h4>
+            <h6>
+              4.8
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </h6>
+            <button>Start Course</button>
+            <div class="bg-container">
+              <p>What you learn</p>
+              <div class="btn-container">
+                <button id="smallBtn">Java</button>
+                <button id="smallBtn">Java</button>
+                <button id="smallBtn">Java</button>
+                <button id="smallBtn">Java</button>
+                <button id="smallBtn">Java</button>
+                <button id="smallBtn">Java</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-4 col-sm-6">
+        <div class="course-card">
+          <div style="background: #5E17EB" class="course-card-img">
+            <img
+              src="images/react.png"
+              class="main"
+              alt=""
+            />
+            <img
+              src="images/react.png"
+              class="layered"
+              alt=""
+            />
+          </div>
+          <div class="course-card-content">
+            <h4>React Course Masterclass</h4>
+            <h6>
+              4.8
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </h6>
+            <button>Start Course</button>
+            <div class="bg-container">
+              <p>What you learn</p>
+              <div class="btn-container">
+                <button id="smallBtn">Java</button>
+                <button id="smallBtn">Java</button>
+                <button id="smallBtn">Java</button>
+                <button id="smallBtn">Java</button>
+                <button id="smallBtn">Java</button>
+                <button id="smallBtn">Java</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-4 col-sm-6">
+        <div class="course-card">
+          <div style="background: #5E17EB" class="course-card-img">
+            <img
+              src="images/android.png"
+              class="main"
+              alt=""
+            />
+            <img
+              src="images/android.png"
+              class="layered"
+              alt=""
+            />
+          </div>
+          <div class="course-card-content">
+            <h4>Android Development Masterclass</h4>
+            <h6>
+              4.8
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </h6>
+            <button>Start Course</button>
+            <div class="bg-container">
+              <p>What you learn</p>
+              <div class="btn-container">
+                <button id="smallBtn">Java</button>
+                <button id="smallBtn">Java</button>
+                <button id="smallBtn">Java</button>
+                <button id="smallBtn">Java</button>
+                <button id="smallBtn">Java</button>
+                <button id="smallBtn">Java</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-4 col-sm-6">
+        <div class="course-card">
+          <div style="background: #5E17EB" class="course-card-img">
+            <img
+              src="images/dsa.png"
+              class="main"
+              alt=""
+            />
+            <img
+              src="images/dsa.png"
+              class="layered"
+              alt=""
+            />
+          </div>
+          <div class="course-card-content">
+            <h4>DSA Course Masterclass</h4>
+            <h6>
+              4.8
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </h6>
+            <button>Start Course</button>
+            <div class="bg-container">
+              <p>What you learn</p>
+              <div class="btn-container">
+                <button id="smallBtn">Java</button>
+                <button id="smallBtn">Java</button>
+                <button id="smallBtn">Java</button>
+                <button id="smallBtn">Java</button>
+                <button id="smallBtn">Java</button>
+                <button id="smallBtn">Java</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-4 col-sm-6">
+        <div class="course-card">
+          <div style="background: #5E17EB" class="course-card-img">
+            <img
+              src="images/ai.png"
+              class="main"
+              alt=""
+            />
+            <img
+              src="images/ai.png"
+              class="layered"
+              alt=""
+            />
+          </div>
+          <div class="course-card-content">
+            <h4>Artificial Intelligence Masterclass</h4>
+            <h6>
+              4.8
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </h6>
+            <button>Start Course</button>
+            <div class="bg-container">
+              <p>What you learn</p>
+              <div class="btn-container">
+                <button id="smallBtn">Java</button>
+                <button id="smallBtn">Java</button>
+                <button id="smallBtn">Java</button>
+                <button id="smallBtn">Java</button>
+                <button id="smallBtn">Java</button>
+                <button id="smallBtn">Java</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-4 col-sm-6">
+        <div class="course-card">
+          <div style="background: #5E17EB" class="course-card-img">
+            <img
+              src="images/ml.png"
+              class="main"
+              alt=""
+            />
+            <img
+              src="images/ml.png"
+              class="layered"
+              alt=""
+            />
+          </div>
+          <div class="course-card-content">
+            <h4>Machine Learning Masterclass</h4>
+            <h6>
+              4.8
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </h6>
+            <button>Start Course</button>
+            <div class="bg-container">
+              <p>What you learn</p>
+              <div class="btn-container">
+                <button id="smallBtn">Java</button>
+                <button id="smallBtn">Java</button>
+                <button id="smallBtn">Java</button>
+                <button id="smallBtn">Java</button>
+                <button id="smallBtn">Java</button>
+                <button id="smallBtn">Java</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+  <a href="https://codeplanet-courses.netlify.app/" id="big-btn">EXPLORE ALL COURSES</a>
+  </div>
+  
+  
+<!-- Section Box -->
+
+      <h2>Our Services</h2>
+      <div class="main-container">
+        <div class="sec-container">
+          <div class="sec-box" id="box1">
+            <div class="sec-content">
+              <img src="images/classroom.png" />
+              <p>ON CAMPUS TRAININGS</p>
+            </div>
+          </div>
+          <div class="sec-box" id="box2" >
+            <div class="sec-content">
+              <img src="images/presentation.png" />
+              <p>STUDENTS MENTORING</p>
+            </div>
+          </div>
+          <div class="sec-box" id="box3" >
+            <div class="sec-content">
+              <img src="images/learning.png" />
+              <p>WORKSHOPS</p>
+            </div>
+          </div>
+          <div class="sec-box" id="box4" >
+            <div class="sec-content">
+              <img src="images/video-conference.png" />
+              <p>CORPORATE TRAININGS</p>
+            </div>
+          </div>
+          <div class="sec-box" id="box5" >
+            <div class="sec-content">
+              <img src="images/customer-service.png" />
+              <p>IT CONSULTING</p>
+            </div>
+          </div>
+          <div class="sec-box" id="box6" >
+            <div class="sec-content">
+              <img src="images/management.png" />
+              <p>DEVELOPMENT</p>
+            </div>
+          </div>
+          <div class="sec-box" id="box7" >
+            <div class="sec-content">
+              <img src="images/working-man.png" />
+              <p>INTERSHIPS</p>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Students -->
+        
+      <div class="students">
+        <h2 id="first-stud">Our Students</h2>
+      <div class="main-stud-container">
+        <div class="stud-container">
+          <div class="stud-box" id="box1">
+            <div class="stud-content">
+              <img src="images/img (1).jpg">
+              <p>Rohan Vyas</p>
+              <p>Package : 40 Lakh</p>
+            </div>
+          </div>
+          <div class="stud-box" id="box2" >
+            <div class="stud-content">
+              <img src="images/img (2).jpg">
+              <p>Rohan Vyas</p>
+              <p>Package : 40 Lakh</p>
+            </div>
+          </div>
+          <div class="stud-box" id="box3" >
+            <div class="stud-content">
+              <img src="images/img (3).jpg">
+              <p>Rohan Vyas</p>
+              <p>Package : 40 Lakh</p>
+            </div>
+          </div>
+          <div class="stud-box" id="box4" >
+            <div class="stud-content">
+              <img src="images/img (4).jpg">
+              <p>Rohan Vyas</p>
+              <p>Package : 40 Lakh</p>
+            </div>
+          </div>
+          <div class="stud-box" id="box5" >
+            <div class="stud-content">
+              <img src="images/img (5).jpg">
+              <p>Rohan Vyas</p>
+              <p>Package : 40 Lakh</p>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+
+
+      <div class="students">
+        <h2 id="sec-stud">Our Students</h2>
+        <div class="student-container">
+          <div class="student-card">
+            <img src="images/img (1).jpg">
+            <h3>Rohan Vyas</h3>
+            <p>Package : 40 Lakh</p>
+            <div class="card__head">GOOGLE</div>
+          </div>
+          <div class="student-card">
+            <img src="images/img (2).jpg">
+                        <h3>Rohan Vyas</h3>
+            <p>Package : 40 Lakh</p>
+            <div class="card__head">AMAZON</div>
+          </div>
+          <div class="student-card">
+            <img src="images/img (3).jpg">
+                        <h3>Rohan Vyas</h3>
+            <p>Package : 40 Lakh</p>
+            <div class="card__head">MICROSOFT</div>
+          </div>
+          <div class="student-card">
+            <img src="images/img (4).jpg">
+                        <h3>Rohan Vyas</h3>
+            <p>Package : 40 Lakh</p>
+            <div class="card__head">META</div>
+          </div>
+          <div class="student-card">
+            <img src="images/img (5).jpg">
+                        <h3>Rohan Vyas</h3>
+            <p>Package : 40 Lakh</p>
+            <div class="card__head">APPLE</div>
+          </div>
+        </div>
+      </div>
+
+
+
+<!-- Mentors Section -->
+
+<div class="mentors">
+  <h2>Our Mentors & Alumni Working In<br> (150+ Companies)</h2>
+  <div class="mentor-container">
+    <img src="mentors/paytm.webp" class="whoosh">
+    <img src="mentors/Accenture.png" class="whoosh">
+    <img src="mentors/PhonePe.png" class="whoosh">
+    <img src="mentors/tesla.png">
+    <img src="mentors/byjus.png" >
+      <img src="mentors/netflix.png">
+      <img src="mentors/amazon.png">
+      <img src="mentors/google.png" class="whoosh">
+      <img src="mentors/ola.png" class="whoosh">
+      <img src="mentors/Meta-Logo.png" class="whoosh">
+      <img src="mentors/twitter.png">
+      <img src="mentors/ms.png">
+      <img src="mentors/youtube.webp" class="whoosh">
+      <img src="mentors/zomato.png">
+      <img src="mentors/uber.png">
+      <img src="mentors/Canva.png">
+      <img src="mentors/grammerly.png" >
+      <img src="mentors/meesho.jpg" >
+      <img src="mentors/stripe.png">
+      <img src="mentors/spacex.png" class="whoosh">
+    </div>
+    <p id="companies">And <strong>100+</strong> Companies</p>
+</div>
+
+<!-- Footer -->
+
+<footer class="footer-area">
+  <div class="footer-wave-box">
+      <div class="footer-wave footer-animation"></div>
+  </div>
+  <div class="main">
+      <div class="footer">
+          <div class="single-footer">
+              <h4>about us</h4>
+              <p>Lorem ipsum dolor sit amet, di dunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Excepteur sint qui officia deserunt Excepteur.</p>
+              <div class="footer-social">
+                  <a href=""><i class="fab fa-facebook-f"></i></a>
+                  <a href=""><i class="fab fa-twitter"></i></a>
+                  <a href=""><i class="fab fa-instagram"></i></a>
+                  <a href=""><i class="fab fa-linkedin-in"></i></a>
+              </div>
+          </div>
+          <div class="single-footer">
+              <h4>main menu</h4>
+              <ul>
+                  <li><a href="/index/"><i class="fas fa-chevron-right"></i> home</a></li>
+                  <li><a href="/about/"><i class="fas fa-chevron-right"></i> about us</a></li>
+                  <li><a href="/index/"><i class="fas fa-chevron-right"></i> services</a></li>
+                  <li><a href="/course/"><i class="fas fa-chevron-right"></i> courses</a></li>
+                  <li><a href="/index/"><i class="fas fa-chevron-right"></i> contact us</a></li>
+              </ul>
+          </div>
+          <div class="single-footer">
+              <h4>quick links</h4>
+              <ul>
+                  <li><a href=""><i class="fas fa-chevron-right"></i> privacy policy</a></li>
+                  <li><a href=""><i class="fas fa-chevron-right"></i> terms & conditions</a></li>
+                  <li><a href=""><i class="fas fa-chevron-right"></i> disclaimer</a></li>
+              </ul>
+          </div>
+          <div class="single-footer">
+              <h4>contact us</h4>
+              <ul>
+                  <li><a href=""><i class="fas fa-map-marker-alt"></i>  Khushi Tower, 1st floor, Kumbha Marg, Pratap Nagar, Jaipur</a></li>
+                  <li><a href=""><i class="fas fa-mobile-alt"></i> +123 456 789</a></li>
+                  <li><a href=""><i class="far fa-envelope"></i> info@codeplanet.com</a></li>
+                  <li><a href=""><i class="fas fa-globe-europe"></i> www.codeplanet.co.in</a></li>
+              </ul>
+          </div>
+      </div>
+      <div class="copy">
+          <p>&copy; Code Planet 2022 all rights reserved</p>
+      </div>
+  </div>
+</footer>
+
+
+<script>
+
+  var icon = document.getElementById("icon");
+
+  icon.onclick = function () {
+      document.body.classList.toggle("dark-theme");
+      if (document.body.classList.contains("dark-theme")) {
+          icon.src = "images/sun.png";
+      } else{
+          icon.src = "images/moon.png";
+      }
+  }
+</script>
+</body>
+</html>
