@@ -227,8 +227,9 @@
     z-index: 15;
   }
 
-   #step3{
-    margin: 0rem 0rem;    
+   #step3 {
+    position: relative;
+    margin: 0rem -1rem;
 }
   
   @media(min-width: 768px){
