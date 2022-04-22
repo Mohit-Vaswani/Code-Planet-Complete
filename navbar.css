@@ -313,4 +313,10 @@ nav{
   nav input{
     display: none;
   }
+
+@media screen and (max-width){
+.wrapper .logo a {
+    font-size: 20px;
+}
+}
   
