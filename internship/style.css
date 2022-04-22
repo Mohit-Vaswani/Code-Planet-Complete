@@ -419,6 +419,13 @@ color: var(--secondary-color);
  }
 
 @media screen and (max-width: 400px) {
+ .tabs-heading {
+    text-align: center;
+    font-size: 3.5rem;
+    margin: 80rem 0rem 10rem;
+    color: var(--secondary-color);
+}
+  
 .mobile-tabs{
  width: 300px;
  margin: 0 auto; 
