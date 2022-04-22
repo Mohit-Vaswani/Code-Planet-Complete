@@ -279,7 +279,7 @@ background: radial-gradient(circle, #E9D5DA 0%, #A85CF9 100%);
 @media screen and (max-width: 390px) {
   .first-box{
     width: 320px;
-    height: 470px;
+    height: 520px;
   }
   .first-box .calc-tabbed {
     margin: 1rem 1.5rem;
